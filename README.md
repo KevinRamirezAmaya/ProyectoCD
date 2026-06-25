@@ -142,12 +142,3 @@ Cuando termines de trabajar (mismo comando en ambos sistemas):
 ```bash
 deactivate
 ```
-
-## Notas
-
-- Si agregas nuevas librerías durante el desarrollo, actualiza `requirements.txt` con:
-  ```bash
-  pip freeze > requirements.txt
-  ```
-- `dim_pruebas.ipynb` no forma parte del pipeline productivo; mantenlo fuera del flujo de ejecución documentado salvo que lo estés usando para validaciones manuales.
-- Las rutas con `\` (Windows) vs `/` (Linux/macOS) dentro de `config.yml` o del código pueden requerir ajuste si el proyecto referencia archivos con rutas absolutas; se recomienda usar rutas relativas o el módulo `os.path`/`pathlib` para evitar incompatibilidades entre sistemas.
