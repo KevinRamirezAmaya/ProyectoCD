@@ -366,25 +366,13 @@ resultado = pd.read_sql(consulta, etl_conn)
 
 resultado
 consulta = """
-
 SELECT
-
-    dn.key_novedad,
-
+    grupo_novedad,
     COUNT(*) AS total_novedades
-
-FROM hecho_novedades hn
-
-JOIN dim_novedades dn
-
-    ON hn.key_novedad = dn.key_novedad
-
-GROUP BY dn.key_novedad
-
+FROM dim_novedades
+GROUP BY grupo_novedad
 ORDER BY total_novedades DESC;
-
 """
 
 resultado = pd.read_sql(consulta, etl_conn)
-
 resultado
