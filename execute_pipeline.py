@@ -7,21 +7,21 @@ from nbconvert.preprocessors import CellExecutionError
 
 notebooks_order = [
     # Paso 1: Dimensiones (orden indistinto)
-    "dim_usuario.ipynb",
-    "dim_fecha.ipynb",
-    "dim_geografia.ipynb",
-    "dim_hora.ipynb",
-    "dim_mensajero.ipynb",
-    "dim_novedades.ipynb",
-    "dim_proveedor.ipynb",
-    "dim_sede.ipynb",
+    "Notebooks/dim_usuario.ipynb",
+    "Notebooks/dim_fecha.ipynb",
+    "Notebooks/dim_geografia.ipynb",
+    "Notebooks/dim_hora.ipynb",
+    "Notebooks/dim_mensajero.ipynb",
+    "Notebooks/dim_novedades.ipynb",
+    "Notebooks/dim_proveedor.ipynb",
+    "Notebooks/dim_sede.ipynb",
     # Paso 2: Transformacion intermedia
-    "trans_servicios.ipynb",
+    "Notebooks/trans_servicios.ipynb",
     # Paso 3: Tablas de hechos (en este orden obligatorio)
-    "hecho_servicios.ipynb",
-    "hecho_novedades.ipynb",
+    "Notebooks/hecho_servicios.ipynb",
+    "Notebooks/hecho_novedades.ipynb",
     # Paso 4: Consultas finales
-    "consultas.ipynb"
+    "Notebooks/consultas.ipynb"
 ]
 
 def run_notebook(nb_filename):
