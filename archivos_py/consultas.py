@@ -2,7 +2,9 @@ import pandas as pd
 import yaml
 from sqlalchemy import create_engine
 
-with open('config.yml', 'r') as f:
+import os
+config_path = 'config.yml' if os.path.exists('config.yml') else os.path.join('..', 'config.yml')
+with open(config_path, 'r') as f:
     config = yaml.safe_load(f)
 
 config_etl = config['ETL_PRO']
