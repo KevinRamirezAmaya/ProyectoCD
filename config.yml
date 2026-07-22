@@ -2,7 +2,7 @@ mensajeria:
   drivername: postgresql
   dbname: mensajeria
   user: postgres
-  password: "12345"
+  password: "312898"
   host: localhost
   port: "5432"
 
@@ -10,6 +10,6 @@ ETL_PRO:
   drivername: postgresql
   dbname: etl_process
   user: postgres
-  password: "12345"
+  password: "312898"
   host: localhost
   port: "5432"

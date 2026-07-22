@@ -39,8 +39,8 @@ def run_notebook(nb_filename):
     with open(nb_path, "r", encoding="utf-8") as f:
         nb = nbformat.read(f, as_version=4)
         
-    # Configure execution to use the newly installed venv-mensajeria kernel
-    ep = ExecutePreprocessor(timeout=600, kernel_name="venv-mensajeria")
+    # Configure execution to use the venv's registered Jupyter kernel
+    ep = ExecutePreprocessor(timeout=600, kernel_name="python3")
     
     try:
         # Run the notebook in the script's directory context

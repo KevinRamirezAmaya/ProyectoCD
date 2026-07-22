@@ -1,3 +1,7 @@
 venv
 env
 novedades_unicas.csv
+.venv
+.vscode
+DOCUMENTACION_DETALLADA.md
+copia-BD.sql
